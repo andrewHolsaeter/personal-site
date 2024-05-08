@@ -8,6 +8,7 @@
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/overrides.css" />
 </head>
 
 <body class="is-preload">
@@ -33,8 +34,8 @@
 		<section id="first">
 			<header>
 				<h2>Drillbotics</h2>
-				<h3>Size: 5</h3>
-				<h3>Budget: $100,000</h3>
+				<h3 class="projectinfo">Size: 5</h3>
+				<h3 class="projectinfo">Budget: $100,000</h3>
 			</header>
 			<div class="content">
 				<p><strong>UiS Drillbotics</strong> A university competition to build a completely autonomous lab-scale
@@ -47,19 +48,20 @@
 		<section>
 			<header>
 				<h2>Dristributed Drilling Control</h2>
-				<h3>2022</h3>
-				<h3>Size: ...</h3>
-				<h3>Budget: $...</h3>
+				<h3 class="projectinfo">2022</h3>
+				<h3 class="projectinfo">Size: ...</h3>
+				<h3 class="projectinfo">Budget: $...</h3>
 				<p>Innovative control methodology and hardware solution for vibration damping.</p>
 			</header>
 			<div class="content">
-				<p><strong>Main Development Engineer</strong> Design, construction, and programmer. This project was
+				<p><strong>Main Development Engineer</strong> Design, construction, and full-stack programming. This
+					project was
 					designed to test and validate a new way of mitigating drillstring vibrations. But in order to test
 					that, a physical drilling simulator needed to be built around it. </p>
-				<video width="320" height="240" controls>
+				<!-- 				<video width="320" height="240" controls>
 					<source src="videos/RunROP2.mov" type="video/mp4">
 					Your browser does not support the video tag.
-				</video>
+				</video> -->
 				<ul class="feature-icons">
 					<li class="icon solid fa-laptop">C#</li>
 					<li class="icon solid fa-laptop">C++ (Arduino)</li>
@@ -77,8 +79,8 @@
 		<section>
 			<header>
 				<h2>Flow Rate Out Sensor: Proof of Concept</h2>
-				<h3>Size: 2</h3>
-				<h3>Budget: $...</h3>
+				<h3 class="projectinfo">Size: 2</h3>
+				<h3 class="projectinfo">Budget: $...</h3>
 			</header>
 			<div class="content">
 				<p><strong>Flow Rate Out Sensor: (POC)</strong> Small scale lab setup to prove....</p>
@@ -100,9 +102,9 @@
 		<section>
 			<header>
 				<h2>Flow Rate Out Sensor: Verification</h2>
-				<h3>2023-2024</h3>
-				<h3>Size: 5</h3>
-				<h3>Budget: $1 M</h3>
+				<h3 class="projectinfo">2023-2024</h3>
+				<h3 class="projectinfo">Size: 5</h3>
+				<h3 class="projectinfo">Budget: $1 M</h3>
 				<p>Following the success of the POC project, a new project was awarded to NORCE to develop a
 					medium scale sensor that would go up to 200 l/min and test more fluids including actual drilling mud
 					provided by industry partners.</p>
@@ -120,12 +122,49 @@
 		<!-- Section -->
 		<section>
 			<header>
+				<h2>DigiWells</h2>
+				<h3 class="projectinfo">2020-2028</h3>
+				<h3 class="projectinfo">Size: 30+</h3>
+				<h3 class="projectinfo">Budget: $9M</h3>
+				<p>A long term center to develop new knowledge, methodologies, and innovative solutions to improve the
+					well delivery process enabled by digitalization, new sensors, high speed telemetry, automation, and
+					autonomy.</p>
+			</header>
+			<div class="content">
+				<p><strong>Microservices</strong> Our aim at NORCE with this center aim is to develop drilling
+					automation based around microservices. I was responsible for building
+					the entire microservice architecture from the ground up including installing the on-premis
+					servers, creating the development environments, and complete setup of a Kubernetes production level
+					cluster. </p>
+				<ul class="feature-icons">
+					<li class="icon solid fa-laptop">Docker</li>
+					<li class="icon solid fa-laptop">Kubernetes</li>
+					<li class="icon solid fa-info">Linux</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- Section -->
+		<section>
+			<header>
 				<h2>Publications</h2>
 			</header>
 			<div class="content">
 				<ul class="publications">
-					<li><a href="#">Publication 1</a></li>
-					<li><a href="#">Publication 2</a></li>
+					<li><a href="https://doi.org/10.2118/212521-MS" target="_blank"> Experimental Verification of
+							Vibration Mitigation
+							Through a Viscous Damping System
+							Along the Drill String
+						</a></li>
+					<li><a href="https://doi.org/10.2118/217695-MS" target="_blank">Development and Validation of a
+							Rotating Wheel
+							Coriolis Mass Flowmeter for Accurate
+							Measurement of Drilling Fluid with No Pressure Loss
+						</a></li>
+					<li><a href="https://uis.brage.unit.no/uis-xmlui/handle/11250/2463368" target="_blank">Integration
+							of Modeling and Drilling Incident Management of a Real-time Lab-scale
+							Autonomous Drilling Rig
+						</a></li>
 				</ul>
 			</div>
 		</section>

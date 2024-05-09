@@ -8,6 +8,20 @@ header .projectinfo {
 .slideshow .modal {
   display: none;
 }
+#myModal .modal-content {
+  background-color: inherit;
+}
+
+.capt-wrapper {
+  visibility: inherit;
+}
+
+.capt {
+  position: absolute;
+  width: 100%;
+  background-color: inherit;
+  color: white;
+}
 
 .mySlides img {
   display: block;

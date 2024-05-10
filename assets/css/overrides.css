@@ -5,6 +5,45 @@
 header .projectinfo {
     margin: 0 0 0.5rem 0;
 }
+
+header ul {
+  text-align: left;
+}
+
+
+@media screen and (max-width: 1152px) {
+  header ul.skills {
+    display: block;
+    max-width:none !important;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  header ul.skills li:before {
+    display:none;
+    background-image: none;
+  }
+
+  header .skills li {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    width: auto;
+    background-color: rgba(144,144,144,0.5);
+    border: none;
+    color: black;
+    padding: 0px 20px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+}
+
+
+
 .slideshow .modal {
   display: none;
 }

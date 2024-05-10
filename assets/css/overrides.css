@@ -47,7 +47,7 @@ header ul {
 .slideshow .modal {
   display: none;
 }
-#myModal .modal-content {
+.modal .modal-content {
   background-color: inherit;
 }
 

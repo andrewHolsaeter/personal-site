@@ -69,10 +69,20 @@ header ul {
   font-size: 2rem;
   padding: 20px;
   text-align: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .gallery-container:hover .overlay {
   opacity: 1;
+}
+
+@media screen and (max-width: 1152px) {
+  .overlay {
+    opacity: 1;
+  }
 }
 
 .capt-wrapper {

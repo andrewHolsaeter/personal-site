@@ -55,47 +55,26 @@
 					semester full of all-nighters, hair pulling, and constant confusion but I loved every second. In the
 					end, an unfortunate last minute switch to a different stabalizer resulted in failed pipe fittings
 					and we finished tied for 3rd.</p>
-				<div class="gallery">
-					<a href="images/drillbotics/IMG_1603.JPG"><img src="images/drillbotics/IMG_1603.JPG" alt="" /></a>
-					<a href="images/drillbotics/IMG_0849.JPG"><img src="images/drillbotics/IMG_0849.JPG" alt="" /></a>
-					<!-- 					<a href="images/drillbotics/IMG_0706.JPG" class="landscape"><img
-								src="images/drillbotics/IMG_0706.JPG" alt="" /></a> -->
+				<div class="content">
+
+					<div class="gallery slideshow">
+						<a href="images/drillbotics/IMG_1603.JPG"><img src="images/drillbotics/IMG_1603.JPG"
+								alt="" /></a>
+						<a href="images/drillbotics/IMG_0849.JPG"><img src="images/drillbotics/IMG_0849.JPG"
+								alt="" /></a>
+						<a href="images/drillbotics/IMG_0706.jpg" class="landscape"
+							onclick="openModal1();currentSlide1(1)">
+							<div class="gallery-container">
+								<img src="images/drillbotics/IMG_0706.jpg" alt="" />
+								<div class="overlay">Gallery</div>
+							</div>
+						</a>
+					</div>
 				</div>
-				<!-- 				<div class="slideshow-container">
-					<div class="mySlides fade">
-						<div class="numbertext">1 / 3</div>
-						<img src="images/drillbotics/IMG_0706.JPG" style="width:100%">
-						<div class="text">Caption Text</div>
-					</div>
-
-					<div class="mySlides fade">
-						<div class="numbertext">2 / 3</div>
-						<img src="images/drillbotics/IMG_1603.JPG" style="width:100%">
-						<div class="text">Caption Two</div>
-					</div>
-
-					<div class="mySlides fade">
-						<div class="numbertext">3 / 3</div>
-						<img src="images/drillbotics/IMG_1603.JPG" style="width:100%">
-						<div class="text">Caption Three</div>
-					</div>
-
-					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-					<a class="next" onclick="plusSlides(1)">&#10095;</a>
-				</div> -->
-				<br>
-
-				<!-- The dots/circles -->
-				<!-- 				<div style="text-align:center">
-								<span class="dot" onclick="currentSlide(1)"></span>
-								<span class="dot" onclick="currentSlide(2)"></span>
-								<span class="dot" onclick="currentSlide(3)"></span>
-							</div> -->
 			</div>
 			<div id="myModal1" class="modal">
 				<span class="close cursor" onclick="closeModal1()">&times;</span>
 				<div class="modal-content">
-
 					<div class="mySlides mySlides1">
 						<div class="numbertext">1 / 4</div>
 						<img src="images/ddc/20220525_175134.jpg" style="width:100%">
@@ -204,24 +183,131 @@
 						</div>
 
 					</div>
-
 					<div class="mySlides mySlides2">
 						<div class="numbertext">2 / 4</div>
-						<img src="images/drillbotics/IMG_0849.JPG" style="width:100%">
+						<img src="images/ddc/IMG_7033.jpg" style="width:100%">
 						<div class="capt-wrapper col">
 							<figcaption class="capt">
-								This is the front end control panel of the drillbotics rig. Apart from the team logo
-								in the bottom left and drillbit image in the top right, everything is my design and
-								implementation. This was my first ever HMI/GUI and I quite like the no flash basicness
-								to it (as if my skills at the time could have added any style to it).
+								These were the first renditions of the magnet holder which I designed and printed out.
+								We wanted to see e.g. the optimal number of magnets in circumference, diameters,
+								tolerances, as well as the attachment method taking several iterations.
+							</figcaption>
+						</div>
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext">3 / 4</div>
+						<img src="images/ddc/IMG_7027.jpg" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								An early rendition with 10 magnets in circumference where you can also see the hole for
+								the set screw I used to keep the magnet brake in place. Eventually we settled on
+								slightly stronger magnets, which were a bit wider, so I reduced to 8 magnets in a “row”
+								with 5 of these rows in total.
+							</figcaption>
+						</div>
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext">3 / 4</div>
+						<img src="images/ddc/IMG_8096.jpg" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								Here you can see the finalized magnet brake with the tube/sleeve it can slide into to
+								vary the braking effect. Later I would install an actuator to this brake so that it
+								could be slid into and out of the non-rotating tube with software.
+							</figcaption>
+						</div>
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext">3 / 4</div>
+						<img src="images/ddc/IMG_7918.jpg" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								Felt like I was breaking a law when doing this but needed to test the two different
+								servo modes. One was in RPM mode acting as the drilling top-drive/rotation while the
+								other was in Torque mode acting as the formation rock fighting back against being
+								drilled.
+							</figcaption>
+						</div>
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext">3 / 4</div>
+						<img src="images/ddc/screen.png" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								During this project, my group acquired a MIPEC 4MILL300ATC PCB milling machine. Which is
+								of great use in Norway, when custom PCB’s will take weeks to ship and cost more in
+								shipping than the PCB’s themselves.
+							</figcaption>
+						</div>
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext">3 / 4</div>
+						<img src="images/ddc/20220613_072642.jpg" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								Which was great because I needed to create another circuit that would take the two
+								+/-10V analog signals from the servo drive and output the 0-5V necessary not to destroy
+								the Arduino. I had already made one manually as seen here
+							</figcaption>
+						</div>
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext">3 / 4</div>
+						<img src="images/ddc/20220803_131509.jpg" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								And with the CNC’d double sided circuit.
+							</figcaption>
+						</div>
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext">3 / 4</div>
+						<img src="images/ddc/20220524_153037.jpg" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								The actuator I threw together to control the magnets sliding into and out of the tube
+								complete with an endstop so I could calibrate after every power down in order to know
+								where it was.
+							</figcaption>
+						</div>
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext">3 / 4</div>
+						<img src="images/ddc/20220530_185714.jpg" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								I particularly like this picture as it shows 3 completely different 3D printed solutions
+								I designed and made. They stepper motor holder, the friction applier and support, and
+								the axial spring system in the top right.
+							</figcaption>
+						</div>
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext">3 / 4</div>
+						<img src="images/ddc/axial_spring.PNG" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								This was a cool idea our chief scientist initially suggested to mimic a drillstrings
+								axial elasticity while still transferring the rotational movement. I found this perfect
+								linear springs shown in the top right which are house inside the 2 combined 3D pieces on
+								the right side. These allow the left “drillstring” to push the right “drillstring” to
+								the right with some elasticity while still maintaining the rotation.
+							</figcaption>
+						</div>
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext">3 / 4</div>
+						<img src="images/ddc//IMG_8047.jpg" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								One day I will learn that you always need three times the size of an electric box as you
+								think. These are the load cell amplifiers which I wanted as close to the load as
+								possible as there was a giant EMI generator in the form of a 750 kW servo motor very
+								close to them.
 							</figcaption>
 						</div>
 					</div>
 
-					<div class="mySlides mySlides2">
-						<div class="numbertext">3 / 4</div>
-						<img src="images/drillbotics/IMG_0706.JPG" style="width:100%">
-					</div>
 
 					<!-- Next/previous controls -->
 					<a class="prev" onclick="plusSlides2(-1)">&#10094;</a>

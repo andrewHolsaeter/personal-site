@@ -59,7 +59,6 @@ function currentSlide2(n) {
 }
 
 function showSlides2(n) {
-    console.log(n);
     var i;
     var slides = document.getElementsByClassName("mySlides2");
     //var dots = document.getElementsByClassName("demo");

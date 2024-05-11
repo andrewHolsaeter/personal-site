@@ -37,3 +37,16 @@ function showSlides(modal, n) {
     }
     slides[slideIndex - 1].style.display = "block";
 }
+
+
+// Enumerate slideshows
+var modals = document.getElementsByClassName('modal-content');
+var num_modals = modals.length;
+for (i = 0; i < num_modals; i++) {
+    var slides = modals[i].getElementsByClassName('mySlides');
+    var total_len = slides.length;
+    for (j = 0; j < total_len; j++) {
+        var slid_num = slides[j].getElementsByClassName('numbertext');
+        slid_num[0].innerText = (j + 1) + "/" + total_len;
+    }
+}

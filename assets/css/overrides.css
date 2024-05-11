@@ -42,7 +42,10 @@ header ul {
   }
 }
 
-
+a.prev,
+a.next {
+  border-bottom: none;
+}
 
 .slideshow .modal {
   display: none;

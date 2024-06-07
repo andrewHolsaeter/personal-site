@@ -520,11 +520,174 @@
 					verification project being awarded as well as a patent.</p>
 
 				<div class="content">
-					<div class="gallery">
-						<a href="images/fos_poc/IMG_3211.JPG"><img src="images/fos_poc/IMG_3211.JPG" alt="" /></a>
+					<div class="gallery slideshow">
+						<a href="images/fos_poc/IMG_3200.JPG"><img src="images/fos_poc/IMG_3200.JPG" alt="" /></a>
 						<a href="images/fos_poc/IMG_2373.JPG"><img src="images/fos_poc/IMG_2373.JPG" alt="" /></a>
-						<a href="images/fos_poc/IMG_3130.JPG" class="landscape"><img src="images/fos_poc/IMG_3130.JPG"
-								alt="" /></a>
+						<a href="images/fos_poc/flow_sensor_concept.png" class="landscape"
+							onclick="openModal('poc');currentSlide('poc', 1)">
+							<div class="gallery-container">
+								<img src="images/fos_poc/flow_sensor_concept.png" alt="" />
+								<div class="overlay">Gallery</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div id="poc-modal" class="modal">
+				<span class="close cursor" onclick="closeModal('poc')">&times;</span>
+				<div class="modal-content">
+					<div class="mySlides mySlides2">
+						<div class="numbertext">1 / 4</div>
+						<img src="images/fos_poc/flow_sensor_concept.png" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								This was the initial concept and design by our chief scientist Eric Cayeux. The main
+								idea is to spin a measuring wheel that has 4 "vanes" supporting them at a constant RPM
+								and have a fluid enter in between those discs. These spinning vanes will expel the
+								incoming fluid, applying a force on the vanes due to the coriolis effect;
+								Which in theory is linearly proportional to the amount of mass entering the measuring
+								wheel per time and can be indirectly measured via the torque on the rotating axle.
+								There are many benefits to this design, among them the ability to pick up on small flow
+								rates (essential for kick detection during the most vunerable drilling process of pipe
+								connection when flow is paused), having the measurement done at atmospheric conditions,
+								and the independence of gas/foaming effects that plague the standard vibrating Coriolis
+								Flow meter.
+							</figcaption>
+						</div>
+
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext">...</div>
+						<img src="images/fos_poc/IMG_2370.jpg" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								This shows the fundamental piece behind the concept of this new flow sensor. The 2 thin
+								discs have 4 “vanes” supporting them which expel the incoming fluid, applying a force on
+								the vanes due to the coriolis effect, which in theory is linearly proportional to the
+								amount of mass per time and can be directly measured via the torque on the rotating
+								axle.
+							</figcaption>
+						</div>
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext">...</div>
+						<img src="images/fos_poc/IMG_2359.jpg" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								The initial design and build from our Chief scientist Eric Cayeux had no collecting
+								funnel and just sprayed fluid everywhere.
+							</figcaption>
+						</div>
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext">...</div>
+						<img src="images/fos_poc/IMG_3130.jpg" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								So we designed a 3D printed collecting funnel split into 8 sections (due to size
+								limitations of our 3D printer) and acrylic vertical walls. Went with a special ABS
+								plastic for improved water and fluid interaction but this made fine-tuning the printing
+								settings more difficult.
+							</figcaption>
+						</div>
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext">...</div>
+						<img src="images/fos_poc/IMG_3117.jpg" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								Mapping out the the acrylic vertical walls I needed to cut out.
+							</figcaption>
+						</div>
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext">...</div>
+						<img src="images/fos_poc/IMG_3119.jpg" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								Wondering why I never invested in a jigsaw before this.
+							</figcaption>
+						</div>
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext">...</div>
+						<img src="images/fos_poc/IMG_2369.jpg" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								The initial inlet funnel design demonstrating the tight margins and issues of alignment
+								that also needed to be addressed. Additionally a new inlet funnel needed to be designed
+								and printed that better improved the incoming fluid into the measuring wheel.
+							</figcaption>
+						</div>
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext">...</div>
+						<img src="images/fos_poc/IMG_3138.jpg" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								The new inlet funnel with the same special ABS plastic as the collecting funnel.
+							</figcaption>
+						</div>
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext">...</div>
+						<img src="images/fos_poc/IMG_3201.jpg" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								Both inlet and collecting funnel pieces assembled and topped off with a piece of acrylic
+								with a small hole cut out in the middle for the rotating axle.
+							</figcaption>
+						</div>
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext">...</div>
+						<img src="images/fos_poc/IMG_2365.jpg" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								One of the upgrades I was tasked with was installing a better torque sensor which I
+								coupled with a simple 12-bit ADC IC to improve the Arduino's normal 10 bit resolution.
+							</figcaption>
+						</div>
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext">...</div>
+						<img src="images/fos_poc/IMG_2368.jpg" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								Another improvement we wanted was to install an encoder to more reliably measure the
+								axle's RPM's which is shown here.
+							</figcaption>
+						</div>
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext">...</div>
+						<img src="images/fos_poc/IMG_3105.jpg" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								While the main HMI was done via a touch screen PC seen in the top, I did development,
+								programming, testing of that via my laptop and using C# WinForms.
+							</figcaption>
+						</div>
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext">...</div>
+						<img src="images/fos_poc/IMG_3211.jpg" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								More or less, the final version with all my upgrades that eventually gave us the data
+								and results that enabled us to be awarded funding for a further follow up project with
+								industry partners.
+							</figcaption>
+						</div>
+					</div>
+
+					<!-- Next/previous controls -->
+					<a class="prev" onclick="plusSlides('poc', -1)">&#10094;</a>
+					<a class="next" onclick="plusSlides('poc', 1)">&#10095;</a>
+
+					<!-- Caption text -->
+					<div class="caption-container">
+						<p id="poc-caption"></p>
 					</div>
 				</div>
 			</div>

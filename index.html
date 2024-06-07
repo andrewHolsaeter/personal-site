@@ -718,12 +718,185 @@
 					really got to combine all my fields of knowledge that I had been developing the past years. Docker,
 					Python, electronics, databases, and machine learning modelling were all the things I got to use on
 					this project. </p>
-
-				<div class="gallery">
-					<a href="images/fos_val/full-view.jpg"><img src="images/fos_val/full-view.jpg" alt="" /></a>
-					<a href="images/fos_val/pcb.PNG" class="landscape"><img src="images/fos_val/pcb.PNG" alt="" /></a>
+				<div class="content">
+					<div class="gallery slideshow">
+						<a href="images/fos_val/full-view.jpg"><img src="images/fos_val/full-view.jpg" alt="" /></a>
+						<a href="images/fos_val/20240228_144740.jpg"><img src="images/fos_val/20240228_144740.jpg"
+								alt="" /></a>
+						<a href="images/fos_val/20230816_140834.jpg" class="landscape"
+							onclick="openModal('fos');currentSlide('fos', 1)">
+							<div class="gallery-container">
+								<img src="images/fos_val/20230816_140834.jpg" alt="" />
+								<div class="overlay">Gallery</div>
+							</div>
+						</a>
+					</div>
 				</div>
+			</div>
+			<div id="fos-modal" class="modal">
+				<span class="close cursor" onclick="closeModal('fos')">&times;</span>
+				<div class="modal-content">
+					<div class="mySlides mySlides2">
+						<div class="numbertext">...</div>
+						<img src="images/fos_val/20230816_140834.jpg" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								For this medium scale prototype, we worked with another group in our company (Ullrigg
+								Testing Centre) that has much more advanced manufacturing skills in order to build the
+								sensor and parts. Here is what they built based on our specifications.
+							</figcaption>
+						</div>
 
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext">...</div>
+						<img src="images/fos_val/20230629_141925.jpg" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								And this is installed in our first on-site location. We would pump the fluid up into our
+								sensor prototype (yellow pipe), and then our sensor would collect that fluid and empty
+								into the collecting tank seen towards the right.
+							</figcaption>
+						</div>
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext">...</div>
+						<img src="images/fos_val/20230928_135333.jpg" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								Screenshot from a video taken atop the scaffolding showing the sensor in action at a
+								very low RPM setting. Normally we rotate the disk at ~300 RPM as this is mandatory to
+								get the flow to enter turbulent flow as this is what will cancel out viscous effects
+								playing a part in the torque measurements. These high RPM’s splash fluid everywhere,
+								requiring a plastic tarp to keep in place but that makes for bad pictures/videos showing
+								the sensor in action
+							</figcaption>
+						</div>
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext">...</div>
+						<img src="images/fos_val/20231102_132156.jpg" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								Our sensor, by design, makes turbulent flow which introduces air bubbles into a fluid.
+								During testing of Non-newtonian fluids (which most drilling muds are), these air bubbles
+								get suspended in the fluid and infamously cause Coriolis flow meters problems, which is
+								what we are using as reference to evaluate our prototype.
+							</figcaption>
+						</div>
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext">...</div>
+						<img src="images/fos_val/20231101_120644.jpg" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								So we tried our best to agitate these bubbles out by jerry rigging an agitator onto our
+								collecting tank.
+							</figcaption>
+						</div>
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext">...</div>
+						<img src="images/fos_val/lab.jpg" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								After initial experiments, we upgraded our design and eventually had to move locations
+								to another on-site facility
+							</figcaption>
+						</div>
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext">...</div>
+						<img src="images/fos_val/20240228_144740.jpg" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								Our new setup involved a more complex flow line with convenient T-valves so that we
+								could easily divert and switch flow lines
+							</figcaption>
+						</div>
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext">...</div>
+						<img src="images/fos_val/20231215_121245.jpg" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								And I finally learned to buy a big enough electric box (But actually I just recycled the
+								old box from our initial POC setup).
+							</figcaption>
+						</div>
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext">...</div>
+						<img src="images/fos_val/pcb.PNG" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								But in actually, our new PCB milling machine and my work with EAGLE CAD designing this
+								circuit vastly cut down the physical footprint of the circuitry.
+							</figcaption>
+						</div>
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext">...</div>
+						<img src="images/fos_val/20240308_130846.jpg" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								Our new setup had a much improved agitator that required basically no zip-ties.
+							</figcaption>
+						</div>
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext">...</div>
+						<img src="images/fos_val/20240308_130321.jpg" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								Adding in Xantham gum in order to create a “homemade” drilling mud that is
+								Non-Newtonian.
+							</figcaption>
+						</div>
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext">...</div>
+						<img src="images/fos_val/20240311_130738.jpg" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								A better image of the foaming/bubble issue that could invalidate our reference
+								measurements taken from the Coriolis flow meter. Meaning even if our prototype
+								measurements were perfect, they would appear as bad because our reference measurements
+								were wrong.
+							</figcaption>
+						</div>
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext">...</div>
+						<img src="images/fos_val/20240311_140004.jpg" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								However, our new flow system, tank, and agitator solution means we could remove most of
+								these bubbles in between experimental runs
+							</figcaption>
+						</div>
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext">...</div>
+						<img src="images/fos_val/20240424_142721.jpg" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								Additionally, we have now tested with a major service company’s supplied mud they
+								actually use for drilling. And not surprisingly, they have developed fluid compositions
+								that don’t have this bubble/foaming problem.
+							</figcaption>
+						</div>
+					</div>
+
+					<!-- Next/previous controls -->
+					<a class="prev" onclick="plusSlides('fos', -1)">&#10094;</a>
+					<a class="next" onclick="plusSlides('fos', 1)">&#10095;</a>
+
+					<!-- Caption text -->
+					<div class="caption-container">
+						<p id="fos-caption"></p>
+					</div>
+				</div>
 			</div>
 		</section>
 

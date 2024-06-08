@@ -99,6 +99,7 @@ a.next {
   color: white;
 }
 
+.mySlides video,
 .mySlides img {
   display: block;
 height: 25vw;

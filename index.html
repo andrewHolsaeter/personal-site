@@ -320,10 +320,10 @@
 					<div class="gallery slideshow">
 						<a href="images/ddc/full-setup.jpg"><img src="images/ddc/full-setup.jpg" alt="" /></a>
 						<a href="images/ddc/20220530_185714.jpg"><img src="images/ddc/20220530_185714.jpg" alt="" /></a>
-						<a href="images/ddc/20220525_175134.jpg" class="landscape"
+						<a href="images/ddc/sensor_schematic.jpg" class="landscape"
 							onclick="openModal('ddc');currentSlide('ddc', 1)">
 							<div class="gallery-container">
-								<img src="images/ddc/20220525_175134.jpg" alt="" />
+								<img src="images/ddc/sensor_schematic.jpg" alt="" />
 								<div class="overlay">Gallery</div>
 							</div>
 						</a>
@@ -333,24 +333,74 @@
 			<div id="ddc-modal" class="modal">
 				<span class="close cursor" onclick="closeModal('ddc')">&times;</span>
 				<div class="modal-content">
-
 					<div class="mySlides mySlides2">
-						<div class="numbertext">1 / 4</div>
-						<img src="images/ddc/20220525_175134.jpg" style="width:100%">
+						<div class="numbertext"></div>
+						<img src="images/ddc/sensor_schematic.jpg" style="width:100%">
 						<div class="capt-wrapper col">
 							<figcaption class="capt">
-								This photo shows some of my progession into electrical management. I discovered these
-								black screw terminals which I was quite happy with as they are a nice middle ground
-								between wire nuts/wagos and soldering together ports on both sides. From the top, you
-								see the friction stepper motor, 2 encoders, and the friction load cell. Due to having 2
-								encoders, I needed to upgrade from the normal Arduino Uno to the Mega as the 2 encoders
-								meant I needed atleast 4 interupt pins to accurately keep track of RPMs.
+								The schematic representation of the field-scale damping non-rotating sleeve that our
+								chief scientis created. This would be what I needed to prototype into a lab-scale size.
 							</figcaption>
 						</div>
-
 					</div>
 					<div class="mySlides mySlides2">
-						<div class="numbertext">2 / 4</div>
+						<div class="numbertext"></div>
+						<img src="images/ddc/lab_schematic.jpg" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								This schematic I made shows an overview of the complete lab-scale setup. The "Damping
+								sub" component is what we are prototyping. The Drill-string 1 and 2 components are for
+								recreating a full-scale drillstrings elasticity and friction forces (in order to
+								recreate the problem we are trying to solve). The 3 middle components are mounted on
+								linear rails and pushed via the "Top drive and drawworks" while the "Bit rock
+								interaction" axial movement is set based on a simple bit-rock that takes RPM and Weight
+								on Bit (the force measured by the load cell), and outputs ROP (rate of penetration).
+							</figcaption>
+						</div>
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext"></div>
+						<img src="images/ddc/drillstring_component.JPG" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								A more detailed schematic I made of the drillstring component. The piano string has the
+								purpose of recreating the torsional elasticity that a very long drill-string
+								would have, which would otherwise be impossible to recreate in a limited laboratory
+								space (If I remember correctly, I calculated that the lab-scale drillpipe would have to
+								be the diameter of a human hair to recreate the same slenderness ratio of a full-scale
+								drillstring). The linear spring seeks to accomplish a similair effect in the axial
+								direction. Frictional force can than via an actuator in order to introduce vibrations
+								and stick-slip which is what our prototype seeks to improve.
+							</figcaption>
+						</div>
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext"></div>
+						<img src="images/ddc/axial_spring.png" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								A closer look at the linear spring concept which was a cool idea our chief scientist
+								initially suggested to mimic a drillstrings
+								axial elasticity while still transferring the rotational movement. I found these perfect
+								linear springs, shown in the top right, which are housed inside 2 combined 3D pieces
+								on the right side pipe that I designed and printed. These allow the left “drillstring”
+								to push the right “drillstring” to the right via the springs causing some elasticity
+								while still maintaining the rotation between the modules.
+							</figcaption>
+						</div>
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext"></div>
+						<img src="images/ddc/other_modules.jpg" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								A screenshot from my published paper that shows the schematics of the other 3 modules I
+								designed and created.
+							</figcaption>
+						</div>
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext"></div>
 						<img src="images/ddc/IMG_7033.jpg" style="width:100%">
 						<div class="capt-wrapper col">
 							<figcaption class="capt">
@@ -361,7 +411,7 @@
 						</div>
 					</div>
 					<div class="mySlides mySlides2">
-						<div class="numbertext">3 / 4</div>
+						<div class="numbertext"></div>
 						<img src="images/ddc/IMG_7027.jpg" style="width:100%">
 						<div class="capt-wrapper col">
 							<figcaption class="capt">
@@ -373,7 +423,7 @@
 						</div>
 					</div>
 					<div class="mySlides mySlides2">
-						<div class="numbertext">3 / 4</div>
+						<div class="numbertext"></div>
 						<img src="images/ddc/IMG_8096.jpg" style="width:100%">
 						<div class="capt-wrapper col">
 							<figcaption class="capt">
@@ -384,19 +434,52 @@
 						</div>
 					</div>
 					<div class="mySlides mySlides2">
-						<div class="numbertext">3 / 4</div>
-						<img src="images/ddc/IMG_7918.jpg" style="width:100%">
+						<div class="numbertext"></div>
+						<img src="images/ddc/3d_prints.JPG" style="width:100%">
 						<div class="capt-wrapper col">
 							<figcaption class="capt">
-								Felt like I was breaking a law when doing this but needed to test the two different
-								servo modes. One was in RPM mode acting as the drilling top-drive/rotation while the
-								other was in Torque mode acting as the formation rock fighting back against being
-								drilled.
+								Some of the other 3D models I designed and printed for this project.
 							</figcaption>
 						</div>
 					</div>
 					<div class="mySlides mySlides2">
 						<div class="numbertext">3 / 4</div>
+						<img src="images/ddc/20220530_185714.jpg" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								Which you can see 3 of in this in this picture. The stepper motor holder, the friction
+								applier and support, and the axial spring system in the top right.
+							</figcaption>
+						</div>
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext">3 / 4</div>
+						<img src="images/ddc/IMG_7918.jpg" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								Felt like I was breaking a law when doing this but I needed to test the two different
+								servo motor modes. One was in RPM mode acting as the drilling top-drive/rotation while
+								the other was in torque mode acting as the formation rock fighting back against being
+								drilled.
+							</figcaption>
+						</div>
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext">...</div>
+						<img src="images/ddc/20220525_175134.jpg" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								This photo shows some of my progession into electrical management. I discovered these
+								black screw terminals which I was quite happy with as they are a nice middle ground
+								between wire nuts/wagos and soldering together ports on both sides. From the top, you
+								see the friction stepper motor, 2 encoders, and the friction load cell. Due to having 2
+								encoders, I needed to upgrade from the normal Arduino Uno to the Mega as the 2 encoders
+								meant I needed atleast 4 interupt pins to accurately keep track of RPMs.
+							</figcaption>
+						</div>
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext"></div>
 						<img src="images/ddc/screen.png" style="width:100%">
 						<div class="capt-wrapper col">
 							<figcaption class="capt">
@@ -407,18 +490,18 @@
 						</div>
 					</div>
 					<div class="mySlides mySlides2">
-						<div class="numbertext">3 / 4</div>
+						<div class="numbertext"></div>
 						<img src="images/ddc/20220613_072642.jpg" style="width:100%">
 						<div class="capt-wrapper col">
 							<figcaption class="capt">
 								Which was great because I needed to create another circuit that would take the two
-								+/- 10V analog signals from the servo drive and output the necessary 0-5V in order to
+								+/- 8V analog signals from the servo drive and output the necessary 0-5V in order to
 								not destroy the Arduino. I had already made one manually as seen here.
 							</figcaption>
 						</div>
 					</div>
 					<div class="mySlides mySlides2">
-						<div class="numbertext">3 / 4</div>
+						<div class="numbertext"></div>
 						<img src="images/ddc/20220803_131509.jpg" style="width:100%">
 						<div class="capt-wrapper col">
 							<figcaption class="capt">
@@ -427,7 +510,7 @@
 						</div>
 					</div>
 					<div class="mySlides mySlides2">
-						<div class="numbertext">3 / 4</div>
+						<div class="numbertext"></div>
 						<img src="images/ddc/20220524_153037.jpg" style="width:100%">
 						<div class="capt-wrapper col">
 							<figcaption class="capt">
@@ -439,38 +522,25 @@
 					</div>
 					<div class="mySlides mySlides2">
 						<div class="numbertext">3 / 4</div>
-						<img src="images/ddc/20220530_185714.jpg" style="width:100%">
-						<div class="capt-wrapper col">
-							<figcaption class="capt">
-								I particularly like this picture as it shows 3 completely different 3D printed solutions
-								I designed and made. The stepper motor holder, the friction applier and support, and
-								the axial spring system in the top right.
-							</figcaption>
-						</div>
-					</div>
-					<div class="mySlides mySlides2">
-						<div class="numbertext">3 / 4</div>
-						<img src="images/ddc/axial_spring.png" style="width:100%">
-						<div class="capt-wrapper col">
-							<figcaption class="capt">
-								This was a cool idea our chief scientist initially suggested to mimic a drillstrings
-								axial elasticity while still transferring the rotational movement. I found these perfect
-								linear springs shown in the top right which are housed inside the 2 combined 3D pieces
-								on the right side pipe. These allow the left “drillstring” to push the right
-								“drillstring” to the right via the springs causing some elasticity while still
-								maintaining the rotation.
-							</figcaption>
-						</div>
-					</div>
-					<div class="mySlides mySlides2">
-						<div class="numbertext">3 / 4</div>
-						<img src="images/ddc//IMG_8047.jpg" style="width:100%">
+						<img src="images/ddc/IMG_8047.jpg" style="width:100%">
 						<div class="capt-wrapper col">
 							<figcaption class="capt">
 								One day I will learn that you always need three times the size of an electric box as you
 								think. These are the load cell amplifiers which I wanted as close to the load cells as
 								possible as there was a giant EMI generator in the form of a 750W servo motor very
 								close to them.
+							</figcaption>
+						</div>
+					</div>
+					<div class="mySlides mySlides2">
+						<div class="numbertext">3 / 4</div>
+						<img src="images/ddc/hmi_sreenshot.JPG" style="width:100%">
+						<div class="capt-wrapper col">
+							<figcaption class="capt">
+								A screenshot of a video I made for our our final presentation to industry partners which
+								shows the control panel I made to controll everything. (The blue zip tie was just for
+								demonstration purpose so people could see the stepper motor moving and pulling the
+								friction force piece into the interia disk).
 							</figcaption>
 						</div>
 					</div>

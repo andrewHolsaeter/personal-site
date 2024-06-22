@@ -2,6 +2,16 @@
     margin: 0 0 1rem 0 !important;
 }
 
+#wrapper section.get-in-touch > header h2 {
+  margin: 0 0 1rem 0 !important;
+}
+
+@media screen and (max-width: 1152px) {
+  #wrapper section.get-in-touch > header h2 {
+    margin: 0 0 0rem 0 !important;
+  }
+}
+
 section:not(:has(.projectinfo)) > header h2 {
   margin-bottom: 0;
 }

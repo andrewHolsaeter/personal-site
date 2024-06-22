@@ -1,5 +1,9 @@
-#wrapper section > header h2 {
+#wrapper section:has(.projectinfo) > header h2 {
     margin: 0 0 1rem 0 !important;
+}
+
+section:not(:has(.projectinfo)) > header h2 {
+  margin-bottom: 0;
 }
 
 header .projectinfo {

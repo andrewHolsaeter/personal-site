@@ -10,6 +10,12 @@
   #wrapper section.get-in-touch > header h2 {
     margin: 0 0 0rem 0 !important;
   }
+
+  section.get-in-touch ul.items > li > h3
+  {
+    margin: 1.5rem 0 0 0;
+  }
+
 }
 
 section:not(:has(.projectinfo)) > header h2 {

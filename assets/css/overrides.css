@@ -15,7 +15,6 @@
   {
     margin: 1.5rem 0 0 0;
   }
-
 }
 
 section:not(:has(.projectinfo)) > header h2 {
@@ -237,10 +236,10 @@ width: 100%;
   /* Number text (1/3 etc) */
   .numbertext {
     color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
+    margin: 2rem 12px;
+    position: fixed;
     top: 0;
+    font-size: 1rem;
   }
   
   /* Caption text */

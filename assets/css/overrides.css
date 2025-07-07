@@ -2,6 +2,35 @@
   object-position: top;
 }
 
+
+.feature-image-toggle input[type="checkbox"] {
+  display: none;
+}
+
+.feature-image-toggle .feature-image {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: zoom-in;
+}
+
+.feature-image-toggle input[type="checkbox"]:checked + .feature-image {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.5);
+  z-index: 9999;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+  cursor: zoom-out;
+}
+
+body:has(.feature-image-toggle input[type="checkbox"]:checked)::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9998;
+}
+
+
 @media screen and (max-width: 1152px) {
   #wrapper > section.intro > header {
     height: 40vh;

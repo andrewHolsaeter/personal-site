@@ -10,13 +10,24 @@ body.overlay-active::before {
   position: fixed;
   top: 50%;
   left: 50%;
-  max-width: 90%;
-  max-height: 90%;
-  transform: translate(-50%, -50%);
-  z-index: 9999;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+  transform: translate(-50%, -50%) scale(1);
+  z-index: 10001;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
   cursor: zoom-out;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 90vw; /* fill screen width up to 90% */
+  max-height: 90vh; /* fill screen height up to 90% */
+  width: auto; /* maintain original aspect ratio */
+  height: auto; /* maintain original aspect ratio */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.feature-image.enlarged img {
+  display: block;
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  margin: auto;
 }
 
 

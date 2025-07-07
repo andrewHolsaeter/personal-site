@@ -56,8 +56,21 @@ for (i = 0; i < num_modals; i++) {
 document.addEventListener('click', e => {
   const img = e.target.closest('.feature-image img');
   if (img) {
+    // Get click position relative to image
+    const rect = img.getBoundingClientRect();
+    const x = ((e.clientX - rect.left) / rect.width) * 100;
+    const y = ((e.clientY - rect.top) / rect.height) * 100;
+
+    console.log(x,y);
+
+    // Set transform-origin dynamically
+    img.style.transformOrigin = `${x}% ${y}%`;
+
+    // Toggle enlarged
     img.classList.toggle('enlarged');
     document.body.classList.toggle('overlay-active', img.classList.contains('enlarged'));
+
+    e.stopPropagation();
   } else {
     document.querySelectorAll('.feature-image img.enlarged').forEach(img => {
       img.classList.remove('enlarged');

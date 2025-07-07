@@ -50,3 +50,18 @@ for (i = 0; i < num_modals; i++) {
         slid_num[0].innerText = (j + 1) + "/" + total_len;
     }
 }
+
+
+// Enlargable feature images
+document.addEventListener('click', e => {
+  const img = e.target.closest('.feature-image img');
+  if (img) {
+    img.classList.toggle('enlarged');
+    document.body.classList.toggle('overlay-active', img.classList.contains('enlarged'));
+  } else {
+    document.querySelectorAll('.feature-image img.enlarged').forEach(img => {
+      img.classList.remove('enlarged');
+    });
+    document.body.classList.remove('overlay-active');
+  }
+});

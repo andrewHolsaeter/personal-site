@@ -1,3 +1,25 @@
+body.overlay-active::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9998;
+}
+
+.feature-image img.enlarged {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-width: 90%;
+  max-height: 90%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+  cursor: zoom-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
 #profile-pic {
   object-position: top;
 }
